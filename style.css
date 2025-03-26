@@ -1,0 +1,242 @@
+/* Reset de estilos para remover margens e paddings padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Estilização do corpo */
+body {
+    background-color: #FFF2F2;
+    color: #263238;
+    line-height: 1.6;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Estilização do cabeçalho */
+header {
+    display: flex;
+    justify-content: end;
+    background: #2D336B;
+    color: #FFF2F2;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+   
+    width: 100vw;
+}
+
+
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #FFF2F2;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+#sobre {
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+.div {
+    display: flex;
+    gap: 50px;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+/* Barra lateral */
+aside {
+    padding: 0 1.5rem;
+    margin-top: 2rem;
+    background-color: #FFF2F2;
+    border: 1px solid  #2D336B;
+    height: 600px;
+    box-shadow: 15px 15px #2D336B;
+    text-align: center;
+    position: sticky;
+    top: 80px;
+}
+
+aside img {
+    margin-top: 30px;
+    width: 200px;
+    box-shadow: 10px 0 #2D336B;
+    border-radius: 300px;
+    margin-bottom: 10px;
+}
+
+aside a {
+    text-decoration: none;
+    color: #263238;
+    font-weight: 600;
+}
+
+/* Área principal */
+main {
+
+    padding: 2rem;
+}
+
+section {
+    padding-bottom: 2rem;
+}
+
+section h1 {
+    font-size: 48px;
+    line-height: 1.1;
+    margin-bottom: 10px;
+
+}
+ h2 {
+    margin-bottom: 20px;
+    line-height: 1.2;
+  
+}
+
+/* Estilização do rodapé */
+
+ul {
+    list-style: none;
+}
+
+.interesses {
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.interesses li {
+    background-color: #2D336B;
+    color: #FFF2F2;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#disciplinas li {
+    font-weight: 600;
+    color: #2D336B;
+    display: flex;
+    align-items: flex-start;
+}
+
+#disciplinas img {
+    margin-right: 10px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px 30px;
+}
+
+
+.projeto {
+    overflow: hidden;
+}
+
+.projeto a {
+    text-decoration: none;
+    color: #263238;
+    font-weight: 600;
+    text-align: center;
+   
+}
+
+.projetos img {
+    box-shadow: 10px 10px #2D336B;
+    border: 1px solid #2D336B;
+    max-width: 400px;
+    
+}
+
+
+.projetos img:hover {
+    
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+footer {
+    height: 200px;
+    background-color: #2D336B;
+    color: #FFF2F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-style: normal;
+    
+}
+
+address p {
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+address a {
+    text-decoration: none;
+    color: #FFF2F2;
+    
+}
+
+address a:hover {
+    text-decoration: underline;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Inter', sans-serif;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #e0e0e0;
+}
