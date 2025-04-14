@@ -25,10 +25,9 @@ header {
     background: #2D336B;
     color: #FFF2F2;
     padding: 1rem 2rem;
-    position: sticky;
-    top: 0;
-   
     width: 100vw;
+
+
 }
 
 
@@ -41,6 +40,7 @@ nav ul {
 nav ul li {
     display: inline;
     margin: 0 15px;
+    white-space: nowrap;
 }
 
 nav ul li a {
@@ -78,7 +78,8 @@ aside {
     box-shadow: 15px 15px #2D336B;
     text-align: center;
     position: sticky;
-    top: 80px;
+    top: 10px;
+    margin-bottom: 30px;
 }
 
 aside img {
@@ -155,10 +156,10 @@ ul {
     gap: 20px 30px;
 }
 
-
 .projeto {
-    overflow: hidden;
+    display: flex;
 }
+
 
 .projeto a {
     text-decoration: none;
@@ -172,7 +173,19 @@ ul {
     box-shadow: 10px 10px #2D336B;
     border: 1px solid #2D336B;
     max-width: 400px;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
     
+}
+
+    
+.projeto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
 
@@ -180,6 +193,10 @@ ul {
     
     transform: scale(1.05);
     transition: 0.5s;
+}
+
+span {
+    margin-bottom: 10px;
 }
 
 footer {
@@ -240,3 +257,38 @@ tr:nth-child(even) {
 tr:hover {
     background-color: #e0e0e0;
 }
+
+
+
+
+  @media screen and (max-width: 768px) {
+    
+
+
+    aside {        
+        padding: 0 1.5rem;
+       
+        margin: 2rem;
+        background-color: #FFF2F2;
+        border: 1px solid  #2D336B;
+  
+        box-shadow: 15px 15px #2D336B;
+        text-align: center;
+        position:inherit;
+        top: 0;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .div {
+        display: block;
+    }
+    
+    section h1 {
+        font-size: 36px;
+    }
+  }
+
+ 
